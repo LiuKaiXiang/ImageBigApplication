@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/photo_act_image_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:horizontalSpacing="1px"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="1px" >
+        </GridView>
+
+        <RelativeLayout
+            android:id="@+id/photo_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#80323737"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:minHeight="45dp"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/layout_photo_list"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_default_click"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/photo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="所有图片" />
+
+                <ImageView
+                    android:id="@+id/show_photos"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/phone_big2" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/photo_act_image_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/default_spacing_max"
+                android:paddingRight="@dimen/default_spacing_max"
+                android:background="@drawable/selector_default_click"
+                android:textSize="@dimen/text_size_14"
+                android:text="完成"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

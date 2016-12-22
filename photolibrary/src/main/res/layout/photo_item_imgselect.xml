@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/photo_item_imgselect_img"
+            android:layout_width="128dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/photo_item_imgselect_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:background="@drawable/selector_camera"
+            android:scaleType="centerCrop"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/photo_item_imgselect_isselectedlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="4dp"
+         >
+
+        <ImageView
+            android:id="@+id/photo_item_imgselect_isselected"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_margin="4dp"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

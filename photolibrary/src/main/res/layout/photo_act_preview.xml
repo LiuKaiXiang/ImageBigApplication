@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <FrameLayout
+        android:id="@+id/photo_act_preview_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/photo_act_preview_isselectedrl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom">
+
+        <RelativeLayout
+            android:id="@+id/photo_act_preview_isselectedlin"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/default_spacing"
+            android:paddingRight="@dimen/default_spacing">
+
+            <TextView
+                android:id="@+id/photo_act_preview_former"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/photo_act_preview_isselected"
+                android:paddingLeft="@dimen/default_spacing_micro"
+                android:text="选择"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/photo_act_preview_isselected"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/photo_uncheck" />
+        </RelativeLayout>
+
+        <!--<TextView
+            android:id="@+id/photo_act_preview_isselected_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_green_click"
+            android:gravity="center"
+            android:paddingLeft="@dimen/default_spacing"
+            android:paddingRight="@dimen/default_spacing"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginRight="@dimen/default_spacing_micro"
+            android:visibility="gone"/>-->
+
+        <RelativeLayout
+            android:id="@+id/photo_act_preview_isselectedlin_raw"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/default_spacing"
+            android:paddingRight="@dimen/default_spacing"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/photo_act_preview_former_raw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/photo_act_preview_isselected_raw"
+                android:paddingLeft="@dimen/default_spacing_micro"
+                android:text="原图"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"/>
+
+            <ImageView
+                android:id="@+id/photo_act_preview_isselected_raw"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/photo_uncheck" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.yykaoo.photolibrary.photo.widget.actionbar.AsPhoToolbar
+        android:id="@+id/photo_act_preview_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

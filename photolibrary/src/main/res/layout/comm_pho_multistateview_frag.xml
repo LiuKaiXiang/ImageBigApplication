@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <com.yykaoo.photolibrary.photo.widget.MultiStateView
+        android:id="@+id/common_fragment_multiStateView_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/comm_pho_emptyview"
+        app:msv_errorView="@layout/comm_pho_errorview"
+        app:msv_loadingView="@layout/comm_pho_loadingview"
+        app:msv_viewState="content">
+    </com.yykaoo.photolibrary.photo.widget.MultiStateView>
+
+</LinearLayout>

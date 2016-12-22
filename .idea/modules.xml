@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BigImageViewer/BigImageViewer.iml" filepath="$PROJECT_DIR$/BigImageViewer/BigImageViewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GlideImageLoader/GlideImageLoader.iml" filepath="$PROJECT_DIR$/GlideImageLoader/GlideImageLoader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ImageBigApplication.iml" filepath="$PROJECT_DIR$/ImageBigApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgressPieIndicator/ProgressPieIndicator.iml" filepath="$PROJECT_DIR$/ProgressPieIndicator/ProgressPieIndicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photolibrary/photolibrary.iml" filepath="$PROJECT_DIR$/photolibrary/photolibrary.iml" />
+    </modules>
+  </component>
+</project>
