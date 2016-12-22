@@ -9,7 +9,7 @@
 ------------
 # 使用步骤
 
-1. 将[photolibrary](https://github.com/LiuKaiXiang/ImageBigApplication.git "photolibrary_Module")复制进你的Project中，然后在**settings.gradle**中添加`':photolibrary'`使项目识别到这个库，然后在**Project Structure**中将该库关联到**app**中;
+1. 将*photolibrary*复制进你的Project中，然后在**settings.gradle**中添加`':photolibrary'`使项目识别到这个库，然后在**Project Structure**中将该库关联到**app**中;
 2. 使用前在你的*activity*的*onCreat*方法中添加`ToolsUtil.setContext(this)`(或者使你的*activity*集成**BasePhotoActivity**)，该操作只是为了获取*Context*来初始化一些工具，这样你才可以随意运用内部控件;
 3. 使用时你只需要调用**PhotoHelper**中的`sendPhotoDelete（）`、`sendPhotoLook（）`、`sendPhotoPreView（）`、`sendPhoto（）`、`sendCamera（）`这五个方法：
 	
